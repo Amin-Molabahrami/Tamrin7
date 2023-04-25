@@ -50,18 +50,18 @@ form.addEventListener('submit', function(e) {
 
 // Validate email address using regular expression
 function validateEmail(email) {
-  let re = /\S+@\S+\.\S+/;
-  return re.test(email);
+  let regex = /\S+@\S+\.\S+/;
+  return regex.test(email);
 }
 
 // Password must be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, and one number
 function validatePassword(password) {
-  let re = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/;
-  return re.test(password);
+  let regex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/;
+  return regex.test(password);
 }
 
 // Validate phone number using regular expression
 function validatePhone(phone) {
-  let re = /^\d{11}$/;
-  return re.test(phone);
+  let regex = /^\d{11}$/;
+  return regex.test(phone);
 }
